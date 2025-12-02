@@ -4,6 +4,7 @@ import { bitable, CurrencyCode, FieldType, ICurrencyField, ICurrencyFieldMeta } 
 import { Alert, AlertProps, Button, Select } from 'antd';
 import { CURRENCY } from './const';
 import { getExchangeRate } from './exchange-api';
+import PageGrabber from './page-grabber';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
@@ -50,6 +51,7 @@ function LoadApp() {
   }
 
   return <div>
+    {/*
     <div style={{ margin: 10 }}>
       <div>Select Field</div>
       <Select style={{ width: 120 }} onSelect={setSelectFieldId} options={formatFieldMetaList(currencyFieldMetaList)}/>
@@ -59,5 +61,7 @@ function LoadApp() {
       <Select options={CURRENCY} style={{ width: 120 }} onSelect={setCurrency}/>
       <Button style={{ marginLeft: 10 }} onClick={transform}>transform</Button>
     </div>
+    */}
+    <PageGrabber/>
   </div>
 }
