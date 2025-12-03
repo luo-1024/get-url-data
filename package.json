@@ -1,6 +1,7 @@
 {
   "name": "react-typescript",
   "version": "1.0.0",
+  "output": "dist",   // 新增：指定输出目录为 dist
   "type": "module",
   "description": "React TypeScript on Replit, using Vite bundler",
   "scripts": {
